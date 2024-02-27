@@ -1,4 +1,5 @@
-﻿using TNews.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using TNews.Data;
 using TNews.Models;
 
 namespace TNews.Repositorios
