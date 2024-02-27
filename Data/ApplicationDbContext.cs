@@ -19,15 +19,15 @@ namespace TNews.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Noticia>()
-                .ToTable("Noticia")
+                //.ToTable("Noticia")
                 .HasKey(n => n.Id);
 
             modelBuilder.Entity<Categoria>()
-                .ToTable("Categorias")
+                //.ToTable("Categorias")
                 .HasKey(c => c.Id);
 
             modelBuilder.Entity<Autor>()
-                .ToTable("Autores")
+                //.ToTable("Autores")
                 .HasKey(a => a.Id);
 
             // Relações
