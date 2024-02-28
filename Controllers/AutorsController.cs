@@ -54,7 +54,7 @@ namespace TNews.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Descricao")] Autor autor)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Biografia,Foto")] Autor autor)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace TNews.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Descricao")] Autor autor)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Biografia,Foto")] Autor autor)
         {
             if (id != autor.Id)
             {
